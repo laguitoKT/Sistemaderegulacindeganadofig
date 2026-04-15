@@ -3,11 +3,11 @@ import { Lock, Mail, User } from 'lucide-react';
 
 export default function Login() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-[#e8f3e5] to-blue-50 flex items-center justify-center p-8">
+    <div className="min-h-screen bg-gradient-to-br from-[#e8f3e5] to-blue-50 flex items-center justify-center p-4 sm:p-8">
       <div className="bg-white rounded-2xl shadow-2xl w-full max-w-5xl overflow-hidden">
-        <div className="grid grid-cols-2">
+        <div className="grid grid-cols-1 lg:grid-cols-2">
           {/* Lado Izquierdo - Branding con Imagen */}
-          <div className="relative p-12 flex flex-col justify-center text-white overflow-hidden">
+          <div className="relative p-8 lg:p-12 flex flex-col justify-center text-white overflow-hidden min-h-[200px] lg:min-h-0">
             {/* Imagen de fondo */}
             <div 
               className="absolute inset-0 bg-cover bg-center"
@@ -38,7 +38,7 @@ export default function Login() {
           </div>
 
           {/* Lado Derecho - Formulario */}
-          <div className="p-12">
+          <div className="p-6 sm:p-12">
             <div className="mb-10">
               <h2 className="text-3xl font-bold text-gray-900 mb-2">Iniciar Sesión</h2>
               <p className="text-gray-600">Ingresa tus datos para acceder</p>

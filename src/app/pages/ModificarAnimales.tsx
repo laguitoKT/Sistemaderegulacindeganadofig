@@ -142,7 +142,7 @@ export default function ModificarAnimales() {
         ]}
       />
 
-      <main className="flex-1 p-10">
+      <main className="flex-1 p-4 pt-20 lg:p-10 lg:pt-10">
         {/* Mensaje de éxito */}
         {showSuccessMsg && (
           <div className="mb-6 bg-[#D1EEC9] border-[1.6px] border-[#a8dda0] rounded-[14px] p-4 flex items-center gap-3">

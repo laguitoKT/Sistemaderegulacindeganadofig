@@ -36,16 +36,16 @@ export default function ConsultaPublica() {
     <div className="min-h-screen bg-[#F2EAC2]">
       {/* Header */}
       <div className="bg-[#5B321A] shadow-lg">
-        <div className="max-w-7xl mx-auto px-10 py-6">
+        <div className="max-w-7xl mx-auto px-4 sm:px-10 py-6">
           <div className="flex items-center justify-between">
-            <h1 className="text-[32px] font-['Annapurna_SIL'] text-white">
+            <h1 className="text-[20px] sm:text-[32px] font-['Annapurna_SIL'] text-white">
               Consulta Pública - Animal Certificado
             </h1>
           </div>
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto p-10 py-16">
+      <div className="max-w-7xl mx-auto p-4 sm:p-10 py-8 sm:py-16">
         {/* Badge de Certificación */}
         <div className="text-center mb-12">
           <div className="inline-flex items-center px-8 py-4 bg-[#e8eccd] text-[#7a8c38] rounded-full mb-6">
@@ -56,19 +56,19 @@ export default function ConsultaPublica() {
           <p className="text-xl text-gray-600">Información validada por veterinario certificador</p>
         </div>
 
-        <div className="grid grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {/* Columna Principal - Datos del Animal */}
-          <div className="col-span-2 space-y-8">
+          <div className="lg:col-span-2 space-y-8">
             {/* Información Básica */}
-            <div className="bg-white rounded-xl shadow-lg p-10">
-              <div className="flex items-center justify-between mb-8">
+            <div className="bg-white rounded-xl shadow-lg p-6 sm:p-10">
+              <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between mb-8 gap-4">
                 <h3 className="text-3xl font-bold text-gray-900">Identificación: {animalData.id}</h3>
                 <span className="px-6 py-3 bg-blue-100 text-blue-800 text-lg font-semibold rounded-lg">
                   {animalData.raza}
                 </span>
               </div>
 
-              <div className="grid grid-cols-2 gap-8">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
                 <div className="space-y-6">
                   <div>
                     <p className="text-sm text-gray-600 mb-1">Edad</p>
@@ -131,12 +131,12 @@ export default function ConsultaPublica() {
             </div>
 
             {/* Información del Productor */}
-            <div className="bg-white rounded-xl shadow-lg p-10">
+            <div className="bg-white rounded-xl shadow-lg p-6 sm:p-10">
               <h3 className="text-2xl font-bold text-gray-900 mb-8 flex items-center">
                 <UserIcon className="w-7 h-7 mr-3 text-blue-600" />
                 Información del Productor
               </h3>
-              <div className="grid grid-cols-2 gap-8">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
                 <div>
                   <p className="text-sm text-gray-600 mb-1">Nombre</p>
                   <p className="text-lg font-semibold text-gray-900">{animalData.productor.nombre}</p>
@@ -160,12 +160,12 @@ export default function ConsultaPublica() {
             </div>
 
             {/* Información del Veterinario Certificador */}
-            <div className="bg-white rounded-xl shadow-lg p-10">
+            <div className="bg-white rounded-xl shadow-lg p-6 sm:p-10">
               <h3 className="text-2xl font-bold text-gray-900 mb-8 flex items-center">
                 <span className="text-3xl mr-3">⚕️</span>
                 Veterinario Certificador
               </h3>
-              <div className="grid grid-cols-2 gap-8 mb-8">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 mb-8">
                 <div>
                   <p className="text-sm text-gray-600 mb-1">Nombre</p>
                   <p className="text-lg font-semibold text-gray-900">{animalData.veterinario.nombre}</p>
@@ -185,8 +185,8 @@ export default function ConsultaPublica() {
           </div>
 
           {/* Columna Lateral - Código QR */}
-          <div className="col-span-1">
-            <div className="bg-white rounded-xl shadow-lg p-10 sticky top-6">
+          <div className="lg:col-span-1">
+            <div className="bg-white rounded-xl shadow-lg p-6 sm:p-10 sticky top-6">
               <h3 className="text-2xl font-bold text-gray-900 mb-6 text-center">Código QR</h3>
               <div className="bg-gray-50 p-8 rounded-lg flex items-center justify-center mb-6">
                 <QRCodeSVG

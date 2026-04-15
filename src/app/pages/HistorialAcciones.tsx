@@ -148,7 +148,7 @@ export default function HistorialAcciones() {
         ]}
       />
 
-      <main className="flex-1 px-10 py-10">
+      <main className="flex-1 px-4 py-20 lg:px-10 lg:py-10">
         {/* Encabezado */}
         <div className="mb-6">
           <h1 className="text-[36px] font-['Annapurna_SIL'] text-[#101828] leading-[40px] mb-2">Mis Actividades</h1>
@@ -158,7 +158,7 @@ export default function HistorialAcciones() {
         </div>
 
         {/* Tarjetas de Resumen */}
-        <div className="grid grid-cols-4 gap-4 mb-6">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
           {/* Tarjeta Todas */}
           <div className="bg-[#357324] rounded-[14px] shadow-[0px_1px_3px_0px_rgba(0,0,0,0.1),0px_1px_2px_0px_rgba(0,0,0,0.1)] p-5">
             <div className="flex items-center gap-2 mb-2">
@@ -278,7 +278,7 @@ export default function HistorialAcciones() {
           </div>
 
           {/* Paginación */}
-          <div className="px-6 py-4 border-t-[0.8px] border-[#e5e7eb] flex items-center justify-between">
+          <div className="px-6 py-4 border-t-[0.8px] border-[#e5e7eb] flex flex-col sm:flex-row items-center justify-between gap-4">
             <p className="text-[14px] font-['Annapurna_SIL'] text-[#6a7282]">
               Mostrando {startIndex + 1} a {Math.min(endIndex, accionesFiltradas.length)} de {accionesFiltradas.length} actividades
             </p>

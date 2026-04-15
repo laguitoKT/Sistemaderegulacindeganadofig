@@ -151,7 +151,7 @@ export default function MisAnimales() {
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto p-8 py-10">
+      <div className="max-w-7xl mx-auto p-4 sm:p-8 py-10">
         {/* Encabezado */}
         <div className="mb-8">
           <h1 className="text-[40px] font-['Annapurna_SIL'] text-[#401c08] mb-2">Mis Animales</h1>
@@ -161,7 +161,7 @@ export default function MisAnimales() {
         </div>
 
         {/* Tarjetas de Tipo de Animal */}
-        <div className="grid grid-cols-6 gap-4 mb-6">
+        <div className="grid grid-cols-3 sm:grid-cols-6 gap-4 mb-6">
           {contadorPorTipo.map((tipo) => (
             <button
               key={tipo.key}
@@ -181,7 +181,7 @@ export default function MisAnimales() {
         </div>
 
         {/* Filtros y Búsqueda */}
-        <div className="bg-white border-[1.6px] border-[rgba(90,115,36,0.2)] rounded-[14px] shadow-sm mb-6 p-6">
+        <div className="bg-white border-[1.6px] border-[rgba(90,115,36,0.2)] rounded-[14px] shadow-sm mb-6 p-4 sm:p-6">
           <div className="flex gap-4">
             <div className="flex-1">
               <div className="relative">
@@ -327,7 +327,7 @@ export default function MisAnimales() {
         </div>
 
         {/* Resumen */}
-        <div className="grid grid-cols-3 gap-4 mt-6">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-6">
           <div className="bg-white border-[1.6px] border-[rgba(90,115,36,0.2)] rounded-[14px] shadow-sm p-6">
             <p className="text-[14px] font-['Annapurna_SIL'] text-[#717182] mb-1">Total Registrados</p>
             <p className="text-[32px] font-['Annapurna_SIL'] text-[#401c08]">{animales.length}</p>

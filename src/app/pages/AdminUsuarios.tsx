@@ -485,14 +485,14 @@ export default function AdminUsuarios() {
         ]}
       />
 
-      <main className="flex-1 p-10">
+      <main className="flex-1 p-4 pt-20 lg:p-10 lg:pt-10">
         <div className="mb-8">
           <h1 className="text-4xl font-bold text-gray-900 mb-2">Gestionar Usuarios</h1>
           <p className="text-lg text-gray-600">Revisa y gestiona la información de todos los usuarios registrados en el sistema</p>
         </div>
 
         {/* Resumen por estado */}
-        <div className="grid grid-cols-4 gap-4 mb-8">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
           {(['todos', 'activo', 'cambios_pendientes', 'rechazado'] as const).map((estado) => {
             const isActive = estadoFilter === estado;
             const colors = {

@@ -115,14 +115,14 @@ export default function VeterinarioDashboard() {
       />
 
       {/* Contenido Principal */}
-      <main className="flex-1 p-10">
+      <main className="flex-1 p-4 pt-20 lg:p-10 lg:pt-10">
         <div className="mb-10">
           <h1 className="text-4xl font-bold text-gray-900 mb-2">Solicitudes de Certificación</h1>
           <p className="text-lg text-gray-600">Revisa y valida las solicitudes pendientes</p>
         </div>
 
         {/* Estadísticas */}
-        <div className="grid grid-cols-4 gap-6 mb-10">
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 mb-10">
           <div className="bg-white rounded-xl shadow p-6">
             <div className="items-center justify-between mb-4">
               <h3 className="text-gray-500 text-sm text-center">Pendientes</h3>
@@ -149,7 +149,7 @@ export default function VeterinarioDashboard() {
                         Pendiente
                       </span>
                     </div>
-                    <div className="grid grid-cols-4 gap-4 text-sm text-gray-600">
+                    <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 text-sm text-gray-600">
                       <div>
                         <span className="font-medium text-gray-700">Productor:</span> {solicitud.productor}
                       </div>

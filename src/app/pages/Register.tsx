@@ -40,7 +40,7 @@ export default function Register() {
   }
 
   return (
-    <div className="min-h-screen bg-[#F2EAC2] p-8">
+    <div className="min-h-screen bg-[#F2EAC2] p-4 sm:p-8">
       <div className="max-w-5xl mx-auto">
         {/* Encabezado */}
         <div className="mb-6">
@@ -64,7 +64,7 @@ export default function Register() {
 
           {/* Selector de Tipo de Usuario */}
           {!userType && (
-            <div className="grid grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
               <button
                 onClick={() => setUserType("rancho")}
                 className="p-8 border-2 border-gray-300 rounded-xl hover:border-[#B3BF56] hover:bg-[#f5f7ea] transition-all text-center"
@@ -142,7 +142,7 @@ export default function Register() {
                 <h3 className="text-2xl font-semibold text-gray-900 mb-6">
                   Datos Personales
                 </h3>
-                <div className="grid grid-cols-2 gap-6">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                   <div>
                     <label className="block text-sm font-medium text-gray-700 mb-2">
                       Nombre Completo *
@@ -199,7 +199,7 @@ export default function Register() {
                       ? "Datos del Rancho"
                       : "Datos del Domicilio"}
                   </h3>
-                  <div className="grid grid-cols-2 gap-6">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                     <div>
                       <label className="block text-sm font-medium text-gray-700 mb-2">
                         {userType === "rancho"
@@ -261,7 +261,7 @@ export default function Register() {
                   <h3 className="text-2xl font-semibold text-gray-900 mb-6">
                     Datos Profesionales
                   </h3>
-                  <div className="grid grid-cols-2 gap-6">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                     <div>
                       <label className="block text-sm font-medium text-gray-700 mb-2">
                         Cédula Profesional *
@@ -385,7 +385,7 @@ export default function Register() {
                 <h3 className="text-2xl font-semibold text-gray-900 mb-6">
                   Configuración de Cuenta
                 </h3>
-                <div className="grid grid-cols-2 gap-6">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                   <div>
                     <label className="block text-sm font-medium text-gray-700 mb-2">
                       Contraseña *
@@ -431,7 +431,7 @@ export default function Register() {
               </div>
 
               {/* Botones */}
-              <div className="flex gap-6 pt-6">
+              <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 pt-6">
                 <button
                   type="button"
                   onClick={() => setUserType(null)}

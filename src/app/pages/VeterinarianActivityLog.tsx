@@ -332,14 +332,14 @@ export default function VeterinarianActivityLog() {
         ]}
       />
 
-      <main className="flex-1 p-10">
+      <main className="flex-1 p-4 pt-20 lg:p-10 lg:pt-10">
         <div className="mb-8">
           <h1 className="text-4xl font-bold text-gray-900 mb-2">Mis Actividades</h1>
           <p className="text-lg text-gray-600">Revisa tu historial de acciones en el sistema</p>
         </div>
 
         {/* Resumen por acción */}
-        <div className="grid grid-cols-4 gap-4 mb-8">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
           {(['todos', 'crear', 'actualizar', 'desactivar'] as const).map((accion) => {
             const isActive = accionFilter === accion;
             const colors = {
@@ -478,7 +478,7 @@ export default function VeterinarianActivityLog() {
             </table>
           </div>
 
-          <div className="px-6 py-4 bg-gray-50 border-t border-gray-200 flex items-center justify-between">
+          <div className="px-6 py-4 bg-gray-50 border-t border-gray-200 flex flex-col sm:flex-row items-center justify-between gap-4">
             <p className="text-sm text-gray-600">
               Mostrando <span className="font-semibold">{paginatedActividades.length > 0 ? startIndex + 1 : 0}</span> a{' '}
               <span className="font-semibold">{Math.min(endIndex, filteredActividades.length)}</span> de{' '}

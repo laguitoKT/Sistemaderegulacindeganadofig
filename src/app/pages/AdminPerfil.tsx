@@ -129,7 +129,7 @@ export default function AdminPerfil() {
         ]}
       />
 
-      <main className="flex-1 p-10 pb-[140px]">
+      <main className="flex-1 p-4 pt-20 lg:p-10 lg:pt-10">
         {/* Mensaje de éxito */}
         {showSuccessMsg && (
           <div className="mb-6 bg-[#f0e8e3] border border-[#d4c4b8] rounded-xl p-4 flex items-center gap-3">
@@ -157,7 +157,7 @@ export default function AdminPerfil() {
         )}
 
         {/* Info cards */}
-        <div className="grid grid-cols-3 gap-6 mb-8">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-8">
           <div className="bg-white rounded-xl shadow p-6">
             <p className="text-sm text-gray-500 mb-1">Rol del Sistema</p>
             <p className="text-xl font-bold text-gray-900 flex items-center gap-2">
@@ -186,7 +186,7 @@ export default function AdminPerfil() {
                 <User className="w-5 h-5 text-[#5B321A]" />Datos Personales
               </h3>
             </div>
-            <div className="p-6 grid grid-cols-2 gap-6">
+            <div className="p-6 grid grid-cols-1 sm:grid-cols-2 gap-6">
               <div>
                 <label className="block text-sm font-medium text-gray-500 mb-1">Nombre Completo</label>
                 {editMode ? (
@@ -242,7 +242,7 @@ export default function AdminPerfil() {
                 <Shield className="w-5 h-5 text-[#5B321A]" />Información Administrativa
               </h3>
             </div>
-            <div className="p-6 grid grid-cols-2 gap-6">
+            <div className="p-6 grid grid-cols-1 sm:grid-cols-2 gap-6">
               <div>
                 <label className="block text-sm font-medium text-gray-500 mb-1">
                   Rol
@@ -317,7 +317,7 @@ export default function AdminPerfil() {
         </div>
 
         {/* Botones de Acción */}
-        <div className="bg-white rounded-xl shadow p-6 flex gap-3 justify-center mb-8">
+        <div className="bg-white rounded-xl shadow p-6 flex flex-wrap gap-3 justify-center mb-8">
           <button
             onClick={() => setShowPasswordModal(true)}
             className="inline-flex items-center gap-2 px-5 py-3 border-2 border-[#5B321A] text-[#5B321A] hover:bg-[#f0e8e3] rounded-lg font-medium transition-colors"

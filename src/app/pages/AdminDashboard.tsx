@@ -95,14 +95,14 @@ export default function AdminDashboard() {
       />
 
       {/* Contenido Principal */}
-      <main className="flex-1 p-10">
+      <main className="flex-1 p-4 pt-20 lg:p-10 lg:pt-10">
         <div className="mb-10">
           <h1 className="text-4xl font-bold text-gray-900 mb-2">Panel de Administración</h1>
           <p className="text-lg text-gray-600">Gestiona usuarios y genera reportes del sistema</p>
         </div>
 
         {/* Estadísticas de Usuarios Activos */}
-        <div className="grid grid-cols-3 gap-6 mb-10">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-10">
           {usuariosActivos.map((tipo) => (
             <div key={tipo.tipo} className="bg-white rounded-xl shadow p-6">
               <div className="flex items-center justify-between mb-4">

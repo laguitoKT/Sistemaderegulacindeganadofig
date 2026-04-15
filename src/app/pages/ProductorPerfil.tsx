@@ -163,7 +163,7 @@ export default function ProductorPerfil() {
         ]}
       />
 
-      <main className="flex-1 p-10">
+      <main className="flex-1 p-4 pt-20 lg:p-10 lg:pt-10">
         {/* Mensaje de éxito */}
         {showSuccessMsg && (
           <div className="mb-6 bg-[#D1EEC9] border border-[#a8dda0] rounded-xl p-4 flex items-center gap-3">
@@ -191,14 +191,14 @@ export default function ProductorPerfil() {
         )}
 
         {/* Información Personal */}
-        <div className="grid grid-cols-2 gap-6 mb-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8">
           <div className="bg-white rounded-xl shadow col-span-2">
             <div className="p-6 border-b border-gray-200">
               <h3 className="text-xl font-semibold text-gray-900 flex items-center gap-2">
                 <User className="w-5 h-5 text-[#357324]" />Datos Personales
               </h3>
             </div>
-            <div className="p-6 grid grid-cols-2 gap-6">
+            <div className="p-6 grid grid-cols-1 sm:grid-cols-2 gap-6">
               <div>
                 <label className="block text-sm font-medium text-gray-500 mb-1">Nombre Completo</label>
                 {editMode ? (
@@ -275,7 +275,7 @@ export default function ProductorPerfil() {
                 <Home className="w-5 h-5 text-[#357324]" />Datos del Rancho
               </h3>
             </div>
-            <div className="p-6 grid grid-cols-2 gap-6">
+            <div className="p-6 grid grid-cols-1 sm:grid-cols-2 gap-6">
               <div>
                 <label className="block text-sm font-medium text-gray-500 mb-1">Nombre del Rancho</label>
                 {editMode ? (
@@ -413,7 +413,7 @@ export default function ProductorPerfil() {
         </div>
 
         {/* Botones de Acción */}
-        <div className="bg-white rounded-xl shadow p-6 flex gap-3 justify-center mb-8">
+        <div className="bg-white rounded-xl shadow p-6 flex flex-wrap gap-3 justify-center mb-8">
           <button
             onClick={() => setShowPasswordModal(true)}
             className="inline-flex items-center gap-2 px-5 py-3 border-2 border-[#357324] text-[#357324] hover:bg-[#e8f3e5] rounded-lg font-medium transition-colors"

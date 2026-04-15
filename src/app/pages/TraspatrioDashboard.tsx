@@ -48,7 +48,7 @@ export default function TraspatrioDashboard() {
       />
 
       {/* Contenido Principal */}
-      <main className="flex-1 p-10">
+      <main className="flex-1 p-4 pt-20 lg:p-10 lg:pt-10">
         {/* Encabezado */}
         <div className="mb-6">
           <h1 className="text-[40px] font-['Annapurna_SIL'] text-[#401c08] mb-2">Panel Principal</h1>
@@ -62,7 +62,7 @@ export default function TraspatrioDashboard() {
             <p className="font-['Annapurna_SIL'] text-[#401c08] font-semibold mb-2 text-[16px]">
               Restricciones de Rancho de Traspatio
             </p>
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div>
                 <p className="font-['Annapurna_SIL'] text-[14px] text-[rgba(64,28,8,0.7)] mb-1">
                   Animales Grandes (bovinos, porcinos, ovinos, caprinos)
@@ -119,7 +119,7 @@ export default function TraspatrioDashboard() {
         </div>
 
         {/* Tarjetas de Valores - Arriba */}
-        <div className="grid grid-cols-2 gap-6 mb-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-10">
           <div className="bg-white border-[1.6px] border-[rgba(90,115,36,0.2)] rounded-[14px] shadow-sm p-6">
             <div className="flex items-center justify-between mb-4">
               <h3 className="text-[14px] font-['Annapurna_SIL'] text-[#717182]">Total de Animales</h3>
@@ -156,7 +156,7 @@ export default function TraspatrioDashboard() {
         </div>
 
         {/* Grid de Tipos de Animal */}
-        <div className="grid grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           <Link to="/mis-animales">
             <div className={`bg-white border-[1.6px] border-[rgba(90,115,36,0.2)] rounded-[14px] shadow-sm hover:shadow-md transition-shadow cursor-pointer ${estaEnLimiteGrandes ? 'opacity-60' : ''}`}>
               <div className="p-6">

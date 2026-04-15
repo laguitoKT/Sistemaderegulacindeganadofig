@@ -72,7 +72,7 @@ export default function RegistroAnimal() {
         </div>
       </div>
 
-      <div className="max-w-6xl mx-auto p-8 py-10">
+      <div className="max-w-6xl mx-auto p-4 sm:p-8 py-10">
         <div className="bg-white rounded-[14px] shadow-lg p-10 border-[1.6px] border-[rgba(90,115,36,0.2)]">
           <h1 className="text-[40px] font-['Annapurna_SIL'] text-[#401c08] mb-3">
             Registrar Nuevo Animal
@@ -85,7 +85,7 @@ export default function RegistroAnimal() {
             {/* Información Básica */}
             <div>
               <h3 className="text-[24px] font-['Annapurna_SIL'] text-[#401c08] mb-6">Información Básica</h3>
-              <div className="grid grid-cols-2 gap-6">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                 <div>
                   <label className="block text-[16px] font-['Annapurna_SIL'] text-[#401c08] mb-2 flex items-center gap-2">
                     <span className="text-[#5A7324]">●</span> Tipo de Animal *
@@ -169,7 +169,7 @@ export default function RegistroAnimal() {
             {/* Datos Físicos */}
             <div>
               <h3 className="text-[24px] font-['Annapurna_SIL'] text-[#401c08] mb-6">Datos Físicos</h3>
-              <div className="grid grid-cols-2 gap-6">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                 <div>
                   <label className="block text-[16px] font-['Annapurna_SIL'] text-[#401c08] mb-2 flex items-center gap-2">
                     <span className="text-[#5A7324]">●</span> Peso Estimado (kg) *
@@ -229,7 +229,7 @@ export default function RegistroAnimal() {
             {/* Tipo de Producción */}
             <div>
               <h3 className="text-[24px] font-['Annapurna_SIL'] text-[#401c08] mb-6">Tipo de Producción</h3>
-              <div className="grid grid-cols-2 gap-6">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                 <div>
                   <label className="block text-[16px] font-['Annapurna_SIL'] text-[#401c08] mb-2 flex items-center gap-2">
                     <span className="text-[#5A7324]">●</span> Propósito *
@@ -341,7 +341,7 @@ export default function RegistroAnimal() {
             </div>
 
             {/* Botones */}
-            <div className="flex gap-6 pt-6">
+            <div className="flex flex-col sm:flex-row gap-6 pt-6">
               <Link to="/productor" className="flex-1">
                 <button
                   type="button"

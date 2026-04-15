@@ -395,14 +395,14 @@ export default function AdminActivityLogAdmins() {
         ]}
       />
 
-      <main className="flex-1 p-10">
+      <main className="flex-1 p-4 pt-20 lg:p-10 lg:pt-10">
         <div className="mb-8">
           <h1 className="text-4xl font-bold text-gray-900 mb-2">Actividades Administrativas</h1>
           <p className="text-lg text-gray-600">Revisa todas las acciones realizadas por administradores en el sistema</p>
         </div>
 
         {/* Resumen por acción */}
-        <div className="grid grid-cols-4 gap-4 mb-8">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
           {(['todos', 'crear', 'actualizar', 'desactivar'] as const).map((accion) => {
             const isActive = accionFilter === accion;
             const colors = {
