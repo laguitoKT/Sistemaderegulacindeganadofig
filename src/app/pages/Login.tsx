@@ -1,5 +1,6 @@
 import { Link } from 'react-router';
-import { Lock, Mail, User } from 'lucide-react';
+import { Lock, Mail } from 'lucide-react';
+import logo2 from '../../imports/logo2-2.png';
 
 export default function Login() {
   return (
@@ -20,8 +21,8 @@ export default function Login() {
             
             {/* Contenido sobre la imagen */}
             <div className="relative z-10 mb-8">
-              <div className="inline-flex items-center justify-center w-20 h-20 bg-white bg-opacity-20 rounded-2xl mb-6 backdrop-blur-sm">
-                <User className="w-10 h-10 text-white" />
+              <div className="inline-flex items-center justify-center w-25 h-25 bg-white bg-opacity-20 rounded-2xl mb-6 backdrop-blur-sm overflow-hidden">
+                <img src={logo2} alt="Logo" className="w-24 h-24 object-cover" />
               </div>
               <h1 className="text-4xl font-bold mb-4">
                 Sistema de Regulación Ganadero
